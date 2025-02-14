@@ -50,7 +50,9 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'rango/about.html')
+    return HttpResponse('Rango says: Here is the about page. <a href="/rango/">Index</a>')
+
+
 
 
 def add_category(request):
